@@ -1,22 +1,19 @@
 #!/usr/bin/env bash
 
+# Update the package lists
+apt update
 
-# 1. Update the package index and install Nginx:
-sudo apt update
-sudo apt install nginx
+# Install Nginx
+apt install -y nginx
 
-# 2. Check that Nginx is running:
-sudo systemctl status nginx
+# Create the "Hello World!" HTML file
+echo "Hello World!" > /var/www/html/index.html
 
-# 3. Configure Nginx to listen on port 80:
-sudo ufw allow 'Nginx HTTP'
+# Modify the Nginx configuration file
+sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
 
-# 4. Create a new server block configuration file in the `/etc/nginx/sites-available/` directory:
-sudo nano /etc/nginx/sites-available/example.com
+# Test the configuration for syntax errors
+nginx -t
 
-# 6. Enable the new server block by creating a symbolic link from the file to the `/etc/nginx/sites-enabled/` directory:
-sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
-
-# 7. Test the configuration and reload Nginx:
-sudo nginx -t
-sudo systemctl reload nginx
+# Reload Nginx to apply the changes (without using systemctl)
+nginx -s reload
