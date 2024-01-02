@@ -4,38 +4,7 @@
 sudo apt-get update
 
 # Install Nginx
-sudo apt-get install nginx
-
-# Create a default Nginx configuration file
-sudo rm /etc/nginx/sites-available/default
-sudo touch /etc/nginx/sites-available/default
-sudo nano /etc/nginx/sites-available/default
-
-# Add the following configuration to the file:
-
-server {
-listen 80;
-server_name _;
-location / {
-    root /usr/share/nginx/html;
-    index index.html index.htm;
-  }
-}
-
-
-# Save the file and exit the text editor
-
-# Create a symbolic link to the default configuration
-sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
-
-# Test the Nginx configuration
-sudo nginx -t
-
-# Restart Nginx
-sudo service nginx restart
-
-# Check the Nginx logs
-sudo cat /var/log/nginx/*log
-
-# Test the Nginx server using curl
-curl -I 127.0.0.1
+sudo apt-get install -y nginx
+sudo chown -R ubuntu /var/www
+echo "Hello World" > /var/www/html/index.nginx-debian.html
+sudo service nginx start
