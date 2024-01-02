@@ -1,19 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Update the package lists
-apt update
+# Update package list and install nginx
+apt-get update
+apt-get install -y nginx
 
-# Install Nginx
-apt install -y nginx
-
-# Create the "Hello World!" HTML file
+# Configure nginx to listen on port 80
 echo "Hello World!" > /var/www/html/index.html
 
-# Modify the Nginx configuration file
-sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
-
-# Test the configuration for syntax errors
-nginx -t
-
-# Reload Nginx to apply the changes (without using systemctl)
-nginx -s reload
+# Restart nginx (without systemctl)
+kill -s HUP $(cat /var/run/nginx.pid)
