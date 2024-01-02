@@ -14,18 +14,6 @@ sudo ufw allow 'Nginx HTTP'
 # 4. Create a new server block configuration file in the `/etc/nginx/sites-available/` directory:
 sudo nano /etc/nginx/sites-available/example.com
 
-# 5. Add the following content to the file:
-
-server {
-    listen 80;
-    server_name example.com;
-    root /var/www/example.com/html;
-    index index.html;
-    location / {
-        try_files $uri $uri/ =404;
-    }
-}
-
 # 6. Enable the new server block by creating a symbolic link from the file to the `/etc/nginx/sites-enabled/` directory:
 sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/
 
