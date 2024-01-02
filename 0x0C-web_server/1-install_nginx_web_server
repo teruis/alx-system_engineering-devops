@@ -1,19 +1,7 @@
 #!/usr/bin/env bash
-
-# Update the package lists
-apt update
-
-# Install Nginx
-apt install -y nginx
-
-# Create the "Hello World!" HTML file
-echo "Hello World!" > /var/www/html/index.html
-
-# Modify the Nginx configuration file
-sed -i 's/listen 80 default_server;/listen 80;/' /etc/nginx/sites-available/default
-
-# Test the configuration for syntax errors
-nginx -t
-
-# Reload Nginx to apply the changes (without using systemctl)
-nginx -s reload
+# Installs, configures, and starts the server
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo chown -R ubuntu /var/www
+echo "Hello World" > /var/www/html/index.nginx-debian.html
+sudo service nginx start
