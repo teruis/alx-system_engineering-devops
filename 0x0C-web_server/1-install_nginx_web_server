@@ -1,14 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Installs, configures, and starts the server
 
-# Update package lists
-apt-get update -y
-
-# Install Nginx
-apt-get install nginx -y
-
-# Create the "Hello World!" index page
-echo "Hello World!" > /var/www/html/index.html
-
-# Restart Nginx (without using systemctl)
-/etc/init.d/nginx restart
-
+sudo apt-get update
+sudo apt-get install -y nginx
+sudo chown -R ubuntu /var/www
+echo "Hello World" > /var/www/html/index.nginx-debian.html
+sudo service nginx start
