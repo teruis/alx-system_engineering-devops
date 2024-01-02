@@ -1,28 +1,23 @@
-#!/usr/bin/env bash
-# Installs Nginx with the following configurations:
-#+    Listens on port 80.
-#+    Returns a page containing "Hello World!" when queried
-#++    at the root with a curl GET request.
+#!/bin/bash
 
-#  updates the package lists for available software packages.
-apt-get update
-# installs the Nginx web server.
-apt-get install -y nginx
+# Check if correct number of arguments are provided
+if [ "$#" -lt 4 ]; then
+  echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+  exit 1
+fi
 
-# Creates the /etc/nginx/html directory, which will serve as the document root directory for Nginx.
-mkdir /etc/nginx/html
-#  creates an empty index.html file inside the /etc/nginx/html directory.
-touch /etc/nginx/html/index.html
-#  sets the content of the index.html file to "Hello World!" using the echo command.
-echo "Hello World!" > /etc/nginx/html/index.html
-# Sets Nginx to listen on port 80 and serve files from the /etc/nginx/html directory.
-printf %s "server {
-     listen      80;
-     listen      [::]:80 default_server;
-     root        /etc/nginx/html;
-     index       index.html index.htm;
-}
-" > /etc/nginx/sites-available/default
+# Assigning arguments to variables
+file_path="$1"
+server_ip="$2"
+username="$3"
+ssh_key="$4"
 
-# Restarts the Nginx service to apply the configuration changes.
-service nginx restart
+# Transfer file using scp to the server's home directory
+scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_path" "${username}@${server_ip}:~/"
+
+# Check if scp command was successful
+if [ $? -eq 0 ]; then
+  echo "File transferred successfully to ${username}@${server_ip}:~/"
+else
+  echo "File transfer failed"
+fi
