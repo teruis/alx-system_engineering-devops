@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
-# Bash script that accepts one argument
-# the script should run the whoami command under the user passed as an argument
-# make sure to try your script by passing different users
+# It should accepts one arg
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <username>"
+    exit 1
+fi
+
+# Run whoami command under specified user
 sudo -u "$1" whoami
