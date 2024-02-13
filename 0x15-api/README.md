@@ -22,9 +22,6 @@ This is a perfect example of a task that is not suited for Bash scripting, so le
 -   [What are microservices](https://intranet.alxswe.com/rltoken/n4h77IbBuDxTE3bhes_AyQ "What are microservices")
 -   [PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry](https://intranet.alxswe.com/rltoken/b7V1ROY6kSRxDDKnsJoqxg "PEP8 Python style - having a clean code respecting style guide is really appreciated in the industry")
 
-## Learning Objectives
-
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/03Evn5VsICwJUAiTdu0zHA "explain to anyone"), **without the help of Google**:
 
 ### General
 
