@@ -155,8 +155,6 @@ root@0a62aa706eb3:/#
 
 ### 1\. User limit
 
-#advanced
-
 Change the OS configuration so that it is possible to login with the `holberton` user and open a file without any error message.
 
 ```
@@ -207,4 +205,4 @@ holberton@079b7269ec1b:~$
 
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x1B-web_stack_debugging_4`
--   File: `1-user_limit.pp`
+-   File: `0-the_sky_is_the_limit_not.pp`, `1-user_limit.pp`
