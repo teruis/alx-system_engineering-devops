@@ -1,3 +1,6 @@
+# copy this "https://dev.mysql.com/doc/refman/5.7/en/checking-gpg-signature.html" key file "signature.key"
+# and add the down command to file "mysql-setup" (chmod u+x) and install withe "./mysql-setup" .
+
 sudo apt-key add signature.key
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7B3B788A8D3785C
 sudo sh -c 'echo "deb http://repo.mysql.com/apt/ubuntu bionic mysql-5.7" >> /etc/apt/sources.list.d/mysql.list'
