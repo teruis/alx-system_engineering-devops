@@ -40,5 +40,7 @@ Test and verify your assumptions
 ## [](https://github.com/hardope/alx-system_engineering-devops/blob/main/0x0F-load_balancer/README.md#tasks)Tasks
 
 [0\. Double the number of webservers](https://github.com/hardope/alx-system_engineering-devops/blob/main/0x0F-load_balancer/0-custom_http_response_header)  
-[![image](https://camo.githubusercontent.com/63ed2789e708cf69b1a6a0426d1ff52f5c488477c42f01012d8ea9802fa01b69/68747470733a2f2f692e706f7374696d672e63632f70724d47643547462f696d6167652e706e67)](https://postimages.org/)   [1\. Install your load balancer](https://github.com/hardope/alx-system_engineering-devops/blob/main/0x0F-load_balancer/1-install_load_balancer)  
-[![image](https://camo.githubusercontent.com/a2b59eaf2a50728ce0756ae037c71fa14a786d96b6f76a072d027c3b4ed00fa6/68747470733a2f2f692e706f7374696d672e63632f346442575a3437362f696d6167652e706e67)](https://postimages.org/)   [2\. Add a custom HTTP header with Puppet](https://github.com/hardope/alx-system_engineering-devops/blob/main/0x0F-load_balancer/2-puppet_custom_http_response_header.pp)
+[![image](https://camo.githubusercontent.com/63ed2789e708cf69b1a6a0426d1ff52f5c488477c42f01012d8ea9802fa01b69/68747470733a2f2f692e706f7374696d672e63632f70724d47643547462f696d6167652e706e67)](https://postimages.org/)
+[1\. Install your load balancer](https://github.com/hardope/alx-system_engineering-devops/blob/main/0x0F-load_balancer/1-install_load_balancer)  
+[![image](https://camo.githubusercontent.com/a2b59eaf2a50728ce0756ae037c71fa14a786d96b6f76a072d027c3b4ed00fa6/68747470733a2f2f692e706f7374696d672e63632f346442575a3437362f696d6167652e706e67)](https://postimages.org/) 
+[2\. Add a custom HTTP header with Puppet](https://github.com/hardope/alx-system_engineering-devops/blob/main/0x0F-load_balancer/2-puppet_custom_http_response_header.pp)
