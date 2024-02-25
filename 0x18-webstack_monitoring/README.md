@@ -1,11 +1,14 @@
 ### Concepts
 
-_For this project, we expect you to look at these concepts:_
+_look at these concepts:_
 
 -   [Monitoring](https://intranet.alxswe.com/concepts/13)
 -   [Server](https://intranet.alxswe.com/concepts/67)
 
-![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/281/hb3pAsO.png)
+
+  <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/281/hb3pAsO.png" alt="Image Description" style="width: 500px; height: 500px;">
+
+
 
 ## Background Context
 
