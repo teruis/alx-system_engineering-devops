@@ -20,6 +20,8 @@ Web stack monitoring can be broken down into 2 categories:
 
 ## Resources
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vSL9y29yYQ4?si=beErnaWagNetxMLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 **Read or watch**:
 
 -   [What is server monitoring](https://intranet.alxswe.com/rltoken/km_XUDAfXEBoXZQsIWEo5Q "What is server monitoring")
@@ -27,9 +29,6 @@ Web stack monitoring can be broken down into 2 categories:
 -   [System monitoring by Google](https://intranet.alxswe.com/rltoken/_8KIbIUNzMgKi_LiGMBWAw "System monitoring by Google")
 -   [Nginx logging and monitoring](https://intranet.alxswe.com/rltoken/V3GsrDcMHPdgrizShj4RCg "Nginx logging and monitoring")
 
-## Learning Objectives
-
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/Bd9r8twsVT3S_8j7-kOLrg "explain to anyone"), **without the help of Google**:
 
 ### General
 
@@ -38,12 +37,6 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 -   What are access logs for a web server (such as Nginx)
 -   What are error logs for a web server (such as Nginx)
 
-### Copyright - Plagiarism
-
--   You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
--   You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
--   You are not allowed to publish any content of this project.
--   Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
 ## Requirements
 
@@ -58,13 +51,6 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 -   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
-## Your servers
-
-| Name | Username | IP | State |  |
-| --- | --- | --- | --- | --- |
-| 421437-web-01 | `ubuntu` | `52.91.122.136` | running |  |
-| 421437-web-02 |  |  |  |  |
-| 421437-lb-01 |  |  |  |  |
 
 ## Tasks
 
@@ -121,5 +107,3 @@ Now create a dashboard with different metrics displayed in order to get a few di
 -   GitHub repository: `alx-system_engineering-devops`
 -   Directory: `0x18-webstack_monitoring`
 -   File: `2-setup_datadog`
-
-Copyright © 2024 ALX, All rights reserved.
