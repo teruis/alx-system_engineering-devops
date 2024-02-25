@@ -20,7 +20,7 @@ Web stack monitoring can be broken down into 2 categories:
 
 ## Resources
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vSL9y29yYQ4?si=beErnaWagNetxMLj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![Datadog Monitoring](https://i.ytimg.com/vi/vSL9y29yYQ4/mqdefault.jpg)](https://youtu.be/vSL9y29yYQ4 "Datadog Monitoring")
 
 **Read or watch**:
 
